@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Evolution Source="#1=F:[Notifier]Notifier.Person::&lt;LastName&gt;k__BackingField" Target="#2=F:[Notifier]Notifier.Person::&lt;LastName&gt;k__OriginalField" />
+  <Evolution Source="#2" Target="#3=P:[Notifier]Notifier.Person::{LastName}k__BackingField()" />
+  <Evolution Source="#4=F:[Notifier]Notifier.Person::&lt;FirstName&gt;k__BackingField" Target="#5=F:[Notifier]Notifier.Person::&lt;FirstName&gt;k__OriginalField" />
+  <Evolution Source="#5" Target="#6=P:[Notifier]Notifier.Person::{FirstName}k__BackingField()" />
+  <Class Class="#7=T:[PostSharp.Patterns.Model]PostSharp.Patterns.Model.NotifyPropertyChangedAttribute">
+    <Instance Declaration="#8=T:[Notifier]Notifier.Person" Id="3789301bfb5ff343">
+      <Target>
+        <JoinPoint Advising="#7" Description="#9=Introduce event PropertyChanged" Ordinal="0" />
+        <JoinPoint Advising="#7" Description="#10=Introduce method remove_PropertyChanged" Ordinal="0" />
+        <JoinPoint Advising="#7" Description="#11=Introduce method add_PropertyChanged" Ordinal="0" />
+        <JoinPoint Advising="#7" Description="#12=Introduce method OnChildPropertyChanged" Ordinal="0" />
+        <JoinPoint Advising="#7" Description="#13=Introduce event ChildPropertyChanged" Ordinal="0" />
+        <JoinPoint Advising="#7" Description="#14=Introduce method remove_ChildPropertyChanged" Ordinal="0" />
+        <JoinPoint Advising="#7" Description="#15=Introduce method add_ChildPropertyChanged" Ordinal="0" />
+        <JoinPoint Advising="#7" Description="#16=Introduce method OnPropertyChanged" Ordinal="0" />
+        <JoinPoint Advising="#7" Description="#17=Introduce interface(s) INotifyChildPropertyChanged, INotifyPropertyChanged" Ordinal="0" />
+        <JoinPoint Advised="#18=M:[Notifier]Notifier.Person::get_LastName()" Advising="#7" Description="#19=Intercepted by advice OnPropertyGet" Semantic="Getter" />
+        <JoinPoint Advised="#18" Advising="#7" Description="#20=Wrapped by advice(s) OnMethodEntry, OnMethodExit" Semantic="Getter" Ordinal="2" />
+        <JoinPoint Advised="#21=M:[Notifier]Notifier.Person::set_LastName(System.String)" Advising="#7" Description="#20" Semantic="Setter" Ordinal="2" />
+        <JoinPoint Advised="#22=M:[Notifier]Notifier.Person::get_FirstName()" Advising="#7" Description="#19" Semantic="Getter" />
+        <JoinPoint Advised="#22" Advising="#7" Description="#20" Semantic="Getter" Ordinal="2" />
+        <JoinPoint Advised="#23=M:[Notifier]Notifier.Person::set_FirstName(System.String)" Advising="#7" Description="#20" Semantic="Setter" Ordinal="2" />
+        <JoinPoint Advised="#24=M:[Notifier]Notifier.Person::get_FullName()" Advising="#7" Description="#19" Semantic="Getter" />
+        <JoinPoint Advised="#24" Advising="#7" Description="#20" Semantic="Getter" Ordinal="2" />
+        <JoinPoint Advised="#2" Advising="#7" Description="#25=Intercepted by advice OnFieldSet" Semantic="Setter" />
+        <JoinPoint Advised="#5" Advising="#7" Description="#25" Semantic="Setter" />
+      </Target>
+    </Instance>
+  </Class>
+</Symbols>

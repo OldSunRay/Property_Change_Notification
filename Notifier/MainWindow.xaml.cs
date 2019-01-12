@@ -33,7 +33,7 @@ namespace Notifier
 
 		private void ChangeFirstName_Click(object sender, RoutedEventArgs e)
 		{
-			person.FirstName = "Changed";
+			person.FirstName = "FirstNameChanged";
 		}
 
 		private void ChangeLastName_Click(object sender, RoutedEventArgs e)
